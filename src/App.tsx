@@ -1,4 +1,5 @@
 import React, {useEffect, useState } from "react";
+import type { todoList } from "./Definition";
 
 
 
@@ -6,12 +7,6 @@ import React, {useEffect, useState } from "react";
 
 
 function App() {
-  interface todoList{
-    id:number;
-    details:string;
-    mark:boolean;
-    time:string;
-  }
   const [author, setAuthor]=useState('')
   const [quote, setQuote]=useState('')
   const [input, setInput]=useState<todoList>({
